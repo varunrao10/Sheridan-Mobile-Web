@@ -1,0 +1,74 @@
+.gridContainer { 
+    display: grid; 
+    grid-template-columns: 40% 25% 35%;
+    grid-template-areas: 
+       "head head head"
+       "column1 column2 column3"
+       "footer footer footer";
+       grid-gap: 3px;
+    
+   }
+
+    section{
+        width: 100%;
+        display: table;
+        margin: 0;
+        max-width: none;
+        height: 80vh;
+    }
+   .head {
+        grid-area: head;
+        background-color: #8ca0ff;
+        max-width: none;
+        height: 10vh;
+    }
+  
+    #column1 {
+        grid-area: column1;
+        background-color: #ffa08c;
+    }
+
+    #column2 {
+        grid-area: column2;
+        background-color: #ff8cd9;
+    }
+
+    #column3 {
+        
+        grid-area: column3;
+        background-color: #8cdeff;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: #8cffa0;
+        max-width: none;
+        height: 10vh;
+    } 
+
+  .SaveToStorageButton {
+    background:url(../images/BtnSaveToStorage.jpg) no-repeat;
+    cursor:pointer;
+    object-fit: cover;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+
+.RetrieveFromStorageButton {
+    background:url(../images/RetrieveStorageButton.png) no-repeat;
+    cursor:pointer;
+    object-fit: cover;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+
+.ClearCountryFromStorageButton {
+    background:url(../images/ClearCountryStorageButton.png) no-repeat;
+    cursor:pointer;
+    object-fit: cover;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
