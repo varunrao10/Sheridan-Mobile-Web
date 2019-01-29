@@ -11,35 +11,35 @@
     <script src="js/E01_MobileWeb.js"></script>
     <div class="gridContainer">
 
+        <!--Header-->
         <header class="head">Exercise #1 for SYST24444</header>
+
+        <!--Column1, consists of the inputs with default values which will then be put into local storage eventually -->
         <section id="column1">
             <p>First Name : <input name="firstname" value="Varun" /></p><br />
             <p>Last Name : <input name="lastname" value="Rao" /></p><br />
-            <p>StudentID : <input name="studentID" value="12345" /></p><br/>
+            <p>StudentID : <input name="studentID" value="12345" /></p><br />
             <p><input type="checkbox" id="location" onclick="HandleLocationChange(this)" checked /></p><br />
             <p id="studentlocation">International</p>
-
         </section>
 
+        <!--Column2, contains all the image buttons that have onclick that calls the js file and the class which calls the css file-->
         <section id="column2">
             <button type="button" class="SaveToStorageButton" onclick="SaveToStorage()"></button><br />
             <button type="button" class="RetrieveFromStorageButton" onclick="RetrieveFromStorage()"></button><br />
             <button type="button" class="ClearCountryFromStorageButton" onclick="ClearCountryFromStorage()"></button>
-
         </section>
 
+        <!--Column3, Output values that are taken from local storage-->
         <section id="column3">
             <div id="studentName"></div><br />
             <div id="sID"></div><br />
             <div id="cDesignation"></div>
-
         </section>
 
+        <!--Footer-->
         <footer class="footer">Name: Varun Rao Student Number: 991498928 Campus: Trafalgar/Oakville</footer>
     </div>
-
-
-
 </body>
 
 </html>

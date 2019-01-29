@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>VarunRaoExcercise01</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <script src="js/customer.js"></script>
+    
+
+        <!--Header-->
+        <header class="head">Assignment #1 / Varun Rao / 991498928</header>
+
+        <!--Page1, consists of the inputs with default values which will then be put into local storage eventually -->
+        <div id="page1">
+            <div id="content">
+                <table>
+                    <tr>
+                        <td>Customer Name : </td>
+                        <td><input name="cName" /></td>
+                    </tr>
+                    <tr>
+                        <td>Customer Email : </td>
+                        <td><input name="cEmail" /></td>
+                    </tr>
+                    <tr>
+                        <td>Room Name : </td>
+                        <td><input name="rName" /></td>
+                    </tr>
+                    <tr>
+                        <td>Width : </td>
+                        <td><input name="width" /></td>
+                    </tr>
+                    <tr>
+                        <td>Length : </td>
+                        <td><input name="length" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Color : </td>
+                        <td><input name="color" type=color /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Paint Type : </td>
+                        <td><select id="paintType">
+                                <option value="standard">Standard Paint($24.99/can)</option>
+                                <option value="premium">Premium Paint($39.99/can)</option>
+                            </select></td>
+                    </tr>
+
+                    <tr>
+                        <td><button type="submit" id="bSubmit" class="SaveToStorageButton" onclick="SaveAndDisplay()">Create Quote</button></td>
+
+                    </tr>
+
+                </table>
+            </div> <!-- Content-->
+        </div> <!-- Page 1 -->
+
+        <div id="page2">
+                <div id="p2_cInfo"></div><br />
+                <div id="p2_rName"></div><br />
+                <div id="p2_sqFt"></div>
+                <div id="p2_color"></div>
+                <div id="p2_numCans"></div>
+                <div id="p2_price"></div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">raova / Trafalgar</footer>
+    
+</body>
+
+</html>

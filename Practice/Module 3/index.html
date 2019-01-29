@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!-- ex01SelectorsActions.html / be sure jquery.js is available -->
+<!-- 1191 Updated -->
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jQuery Example</title>
+	<script src="js/jquery.js"></script>
+	<script src="js/myscript.js"></script>
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<h2></h2>
+<div class="gridArea">
+	<div id="buttons">
+		<table>
+			<tr>
+				<td><button id="gifImages">Outline <strong>GIF</strong> Images</button></td>
+				<td><button id="clearGIF">Clear <strong>GIF</strong> Borders</button></td>
+				<td><button id="pngToggle">Toggle (Hide/Show) <strong>PNG</strong> Images</button></td>
+			</tr>
+			<tr>
+				<td><button id="startsWithEx">Change text to red for any section whose <strong>title attribute starts with 'Text'</strong></button></td>
+				<td><button id="containsEx">Change text to italic for any section <strong>that contains the word 'color'</strong></button></td>
+				<td><button id="hasEx">Underline text for any <strong>section that has a paragraph that contains the text 'para3'</button></td>			
+			</tr>
+		</table>
+	</div>
+	
+	<div id="list">
+		<table id="s1">
+			<tr>
+				<td><img src="images/back.gif" width="50px"></td>
+				<td><img src="images/web.png" width="50px"></td>
+				<td><img src="images/Canada_flag.jpg" width="50px"></td>
+				<td><img src="images/ontario.png" width="50px"></td>
+				<td><img src="images/db.gif" width="50px"></td>
+				<td><img src="images/logical.gif" width="50px"></td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div id="sections">
+		<section id="hoverClick" title="Text area used for hover and click">
+			<strong>Hover on this paragraph for color change and click for a message!</strong>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
+			enim justo. Mauris eget augue id lorem consequat laoreet. Cras ut ante a
+			nunc rutrum iaculis. <img src='images/Canada_flag.jpg' class='smallimg'>
+			<p>Paragraph for para1</p>
+		</section><br>
+		<section id="slide" title="Text area used for slide example">
+			<strong>Click on this paragraph for slide example.</strong> Donec eu neque nunc. Pellentesque pharetra nibh scelerisque tellus
+			tincidunt in volutpat augue semper. Proin luctus sem ac arcu convallis
+			vel ultrices felis scelerisque. Duis vitae sem eros.<img src='images/prog.gif' class='smallimg'>
+			<p>Paragraph for para2</p>
+		</section><br>
+		<section id="fade" title="Callback example">
+			<strong>Click on this paragraph for fade example.</strong> Pellentesque pharetra nibh scelerisque tellus tincidunt in volutpat
+			augue semper. Proin luctus sem ac arcu convallis vel ultrices felis
+			scelerisque. Duis vitae sem eros.<img src='images/ontario.png' class='smallimg'>
+			<p>Paragraph for para3</p>
+		</section><br>
+		<!-- used to hold go back image -->
+		<section id="callBack"></section>
+	</div>
+	<div id="domArea">
+		<img id="pear" src="images/domPear.png">
+		<img id="strawberry" src="images/domStrawberry.png">
+		<img id="apple" src="images/domApple.jpg">
+		<br>
+		<button id="rbutton" style="background:pink;">Click to remove PEAR</button><br>
+		<button id="dbutton" style="background:tan;">Click to detach STRAWBERRY / 2 buttons will show after click</button><br>
+		<button id="d2button" style="background: yellow;">Click to restore Strawberry after Apple</button>
+		
+		<p class="pieApple"><img src="images/domApple.jpg"></p>
+		<button id="abutton" style="background: yellow;">Click to replace apple with strawberry</button>
+	</div>
+</div>
+</body>
+</html>

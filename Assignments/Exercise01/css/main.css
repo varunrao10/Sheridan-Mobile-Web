@@ -18,30 +18,31 @@
     }
    .head {
         grid-area: head;
-        background-color: #8ca0ff;
+        background-color: 	#C0C0C0;
         max-width: none;
         height: 10vh;
     }
   
     #column1 {
         grid-area: column1;
-        background-color: #ffa08c;
+        background-color: #FFFACD;
+        
     }
 
     #column2 {
         grid-area: column2;
-        background-color: #ff8cd9;
+        background-color: #FA8072;
     }
 
     #column3 {
         
         grid-area: column3;
-        background-color: #8cdeff;
+        background-color: #F0E68C;
     }
 
     .footer {
         grid-area: footer;
-        background-color: #8cffa0;
+        background-color: #C0C0C0;
         max-width: none;
         height: 10vh;
     } 

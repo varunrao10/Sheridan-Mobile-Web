@@ -1,0 +1,24 @@
+/* selectors/actions/dom */
+.gridArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "buttons list"
+    "sections domArea"
+  ;
+  place-items: center;
+}
+#buttons {grid-area: buttons;}
+#buttons button {margin: 0px 10px 10px 10px; width: 250px; height: 65px;}
+#list {grid-area: list;}
+#list img {width: 75px; margin: 0px 10px 0px 10px;}
+#sections {grid-area: sections; font-size: 1.15em;}
+#domArea {grid-area: domArea;}
+#domArea img {width: 100px; height: 100px;}
+
+.smallimg {width: 25px;}
+
+table tr:nth-child(2) {font-style: italic; font-weight: bold; text-align: center;}
+.gifBorder{border: thick solid purple;}
+.h2Style{text-align:center;color:purple;}
