@@ -1,0 +1,61 @@
+
+  .gridContainer { 
+    display: grid; 
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: 8fr 2fr;
+    grid-template-areas: 
+       "head head"
+       "content photo"
+       "footer footer";
+   }
+  
+   .head {
+        grid-area: head;
+        background-color: 	#C0C0C0;
+        height: 10vh;
+        position: static;
+        width:100%;
+        text-align: center;
+    }
+
+    #page1 {
+        grid-area: content;
+        background-color: #FFFACD;
+        position: relative;
+    }
+    #page2{
+        grid-area: content;
+        background-color: #FFFACD;
+        z-index: -1;
+        position: relative;
+        top:0;
+        right:0;
+        left: 0;
+        bottom:0;
+        display: none;
+    }
+
+    #photo{
+        grid-area: photo;
+        background:url(../images/pic.jpg) no-repeat center;      
+        background-color:lightblue;  
+        margin:0; 
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: #C0C0C0;
+        max-width: none;
+        height: 10vh;
+        position: static;
+        text-align: center;
+    
+    } 
+
+  .SaveToStorageButton {
+    cursor:pointer;
+    object-fit: cover;
+    width: 100%;
+    height: 50px;
+}
+

@@ -1,0 +1,56 @@
+{
+	"company": {
+		"name": "Acme Widget Corporation",
+		"slogan": "Our company produces the world's best widgets.",
+		"employee": [
+			{
+			"name": "P. Pillai",
+			"id": {
+				"status": "Full Time",
+				"number": "001"
+			},
+			"contact":
+				{
+					"phone": "9053551212",
+					"email": "r.pillai@acme.org"
+				}
+			},
+			{
+				"name": "R. Smith",
+				"id": {
+					"status": "Full time",
+					"number": "002"
+				},
+				"contact": {
+					"phone": "9054551212",
+					"email": "r.smith@acme.org"
+				}
+			},
+			{
+			"name": "A. Lewis",
+			"id": {
+				"status": "Part Time",
+				"number": "P003"
+			},
+			"contact":
+				{
+					"phone": "9053551212",
+					"email": "a.lewix@acme.org"
+				}
+			},
+			{
+			"name": "J. Doe",
+			"id": {
+				"status": "Full Time",
+				"number": "004"
+			},
+			"contact": 
+				{
+					"phone": "9053551212",
+					"email": "j.doe@acme.org"
+				}
+			}
+		]
+
+	}
+}

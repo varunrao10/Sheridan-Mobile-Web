@@ -1,0 +1,39 @@
+
+    section{
+        width: 100%;
+        display: table;
+        margin: 0;
+        max-width: none;
+        height: 80vh;
+    }
+    
+   .head {
+        background-color: 	#C0C0C0;
+        width: 100%;
+        height: 10vh;
+        float: left;
+    }
+  
+    .column1 {
+        width: 50%;  
+        background-color: #FFFACD;
+        float: left;
+
+    }
+    .column2 {
+        width: 50%; 
+        background-color: #FA8072;
+        float: left;
+    }
+
+    @media only screen and (orientation: portrait){
+        [class*="column"]{
+            width: 100%;
+       }
+    }
+    .footer {
+        float:left;
+        background-color: #C0C0C0;
+        width: 100%;
+        height: 10vh;
+    } 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Sheridan Diner</title>
+
+<script src="js/jquery.js"></script>
+<script src="js/myscript.js"></script>
+
+<style>
+	body{
+		background-image:url('images/dinerBackgroundTransparent');
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family: Georgia;}
+	.rhead {
+		font-size: 1.25em;
+		font-weight: bold;
+		text-align: center;
+		color: navy;}
+	.slogan {
+		font-size: 1em; 
+		font-style: italic; 
+		font-weight: none;
+		text-align: center;}
+	.mlist {
+		font-size: 1em;
+		font-weight: none;
+		font-style: none;}
+	hr {clear: both;}
+	table {width:100%;}
+	td {text-align:center; 
+			width: 33%;
+			font-weight: bold;
+			font-style: italic;
+			color: navy;}
+	td img { width: 50px; height: 50px; }
+
+</style>
+</head>
+
+<body>
+  <div id="restaurantName" class="rhead"></div>
+  <div id="rSlogan" class="slogan"></div>
+	<div id="rPic" style="text-align:center;"></div>
+  <hr>
+	
+	<table>
+		<tr>
+			<td><img id="bmenu" src="images/egg.jpg"><br>BREAKFAST</td>
+			<td><img id="lmenu" src="images/wrap.jpg"><br>LUNCH</td>
+			<td><img id="dmenu" src="images/steak.jpg"><br>DINNER</td>
+		</tr>
+	</table>
+
+	<hr>
+  <div id="menuItemsList" class="mlist"></div>
+	<hr>
+	<footer>
+		<cite id="citeH">&copy; Click for more information</cite><br>
+		<cite id="citeT">Background Image By I, Ruhrfisch, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3382477
+		</cite>
+	</footer>
+</body>
+</html>

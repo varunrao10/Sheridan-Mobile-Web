@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        jQuery Setup</title>
+    <meta charset="utf-8" />
+    <!--src =“” is normally renamed to jquery.js / removing version -->
+    <script src='../Jquery/js/jquery-3.3.1.slim.js'></script>
+    <script>$(document).ready(function () {
+            /* Waits for page to load */
+
+            $('#myProg').html('<p>this is a test</p>');
+            /* Overwrites text in ID section */
+
+            $('#myProg').append('Faculty');
+            /* Appends text to ID section */
+
+            $('#myProg').css('color', 'purple');
+            /* Changes text color to purple */
+        });</script>
+</head>
+
+<body>
+    <section id="myProg">
+    </section>/* ID section to change */
+</body>
+
+</html>
