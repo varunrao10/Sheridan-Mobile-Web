@@ -1,9 +1,7 @@
 
-    section{
+    div{
         width: 100%;
-        display: table;
         margin: 0;
-        max-width: none;
         height: 80vh;
     }
     
