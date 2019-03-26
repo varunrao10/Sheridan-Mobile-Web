@@ -1,0 +1,59 @@
+.gridContainer { 
+    display: grid; 
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: 8fr 2fr;
+    grid-template-areas: 
+       "head head"
+       "content photo"
+       "footer footer";
+   }
+
+    div{
+        width: 100%;
+        margin: 0;
+        height: 80vh;
+    }
+    
+   .head {
+        grid-area: head;
+        background-color: 	#C0C0C0;
+        height: 10vh;
+        position: relative;
+        width:100%;
+        text-align: center;
+
+    }
+
+    body{
+        margin: 0;
+    }
+  
+    .column1 {
+        grid-area: content; 
+        background-color: #FFFACD;
+        position: relative;
+        overflow: scroll;
+
+    }
+    .column2 {
+        grid-area: content;
+        background-color: #FFFACD;
+        position: relative;
+        display: none;
+    }
+
+
+
+    @media only screen and (orientation: portrait){
+        [class*="column"]{
+            width: 100%;
+       }
+    }
+    .footer {
+        grid-area: footer;
+        background-color: #C0C0C0;
+        max-width: none;
+        height: 10vh;
+        position: relative;
+        text-align: center;
+    } 

@@ -16,12 +16,12 @@ class Employee {
 
 $(document).ready(function () {
 	console.log("in doc ready");
-	$.getJSON("employees.json", function (data) {
-		console.log(data)
+	$.getJSON("employees.json", function (data1) {
+		console.log(data1)
 
-		empList = data.company.employee;
-		companyname = data.company.name;
-		companyslogan = data.company.slogan;
+		empList = data1.company.employee;
+		companyname = data1.company.name;
+		companyslogan = data1.company.slogan;
 		
 		//Populate the array of employees
 		for (let x = 0; x < empList.length; x++) {

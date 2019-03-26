@@ -1,0 +1,32 @@
+<section class="gridArea">
+  <div class="imgAreacommon">
+    <img src="../../assets/images/tiger.jpg" width="150px">
+  </div>
+  <div class="listAreacommon">
+    
+    <h3>My Student Info:</h3>
+    
+    <ul>
+        <li>Name: Varun Rao</li>
+        <li>Campus: Trafalgar</li>
+        <li>Number: 991498928</li>
+        <li>Username: raova</li>
+    </ul>
+
+  </div>
+  <div class="inputArea"> 
+      <h3>2-Way Data Binding</h3>
+      <p>{{city}}</p>
+      <label><input [(ngModel)]="city"></label>
+      <br />
+      <button [disabled]="city === ''" (click)="clearCity()">Reset City</button>
+
+      <p *ngIf="(city | uppercase) ==='BRAMPTON'|| (city | uppercase) ==='OAKVILLE'; else noCampus"
+        [ngStyle]= "{backgroundColor: backCampus()}">This City has a Sheridan Campus</p>
+
+      <ng-template #noCampus>
+        <p [ngStyle]="{backgroundColor : backCampus()}"> No Campus</p>
+      </ng-template>
+
+  </div>
+</section>

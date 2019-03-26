@@ -1,0 +1,11 @@
+<ul id = "myList">
+    <li *ngFor = "let cls of myclasses; let i = index" id = 's{{i}}' (click)='onClickMe(i)'>
+        {{cls.cname}}
+        <div id ='d{{i}}'>
+            <strong>Class Name: </strong> {{cls.cname}} /
+            <strong>Room: </strong> {{cls.room}} <br>
+            <strong>DOW: </strong> {{cls.dow}} /
+            <strong>Time: </strong> {{cls.tod}} <br>
+        </div>
+    </li>
+</ul>

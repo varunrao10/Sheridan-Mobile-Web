@@ -1,0 +1,23 @@
+.gridArea{
+    display: grid;
+    grid-template-columns: 5fr 5fr; 
+    grid-template-rows: auto;
+    grid-template-areas: "details photo";
+    grid-template-columns: 8fr 2fr;
+    grid-gap: 10px;
+   
+    
+}.common {background-color: bisque; border: thick solid navy; padding: 10px; 
+    margin: 10px; }.imgArea{grid-area: imgArea; text-align: center;}.listArea{grid-area: listArea;}
+
+    #songlist {
+        grid-area: details;
+        background-color: #FFFACD;
+        position: relative;
+    }
+   
+    #photo{
+        grid-area: photo;     
+        background-color:lightblue;  
+        margin:0; 
+    }

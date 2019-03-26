@@ -1,6 +1,7 @@
 
 //Sets the item by assingning the first element of the html name to the raova object of type localstorage
 function SaveToStorage() {
+    //localStorage.setItem("raovaFirstname", document.getElementById("fname").value);
     localStorage.setItem("raovaFirstname", document.getElementsByName("firstname")[0].value);
     localStorage.setItem("raovaLastname", document.getElementsByName("lastname")[0].value);
     localStorage.setItem("raovaStudentID", document.getElementsByName("studentID")[0].value);
